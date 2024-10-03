@@ -1,0 +1,118 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Disease Insights using TMS</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{%static 'img/favicon.png'%}" rel="icon">
+  <link href="{%static 'img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{%static 'lib/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{%static 'lib/font-awesome/css/font-awesome.min.css'%}" rel="stylesheet">
+  <link href="{%static 'lib/animate/animate.min.css'%}" rel="stylesheet">
+  <link href="{%static 'lib/ionicons/css/ionicons.min.css'%}" rel="stylesheet">
+  <link href="{%static 'lib/owlcarousel/assets/owl.carousel.min.css'%}" rel="stylesheet">
+  <link href="{%static 'lib/lightbox/css/lightbox.min.css'%}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="#header"><span>Disease Insights using TMS</span></a></h1>
+
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li><a href="{%url 'AdminHome'%}">Home</a></li>
+          <li><a href="{%url 'ViewRegisteredUsers'%}">Users</a></li>
+          <li><a href="{%url 'AdminTMS'%}">TMS</a></li>
+          <li><a href="{%url 'AdminConfusionMetrics'%}">Metrics</a></li>
+          <li><a href="{%url 'logout'%}">Logout</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+ {%block contents%}
+  {%endblock%}
+
+  <main id="main">
+
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About </h3>
+          <p>Machine learning has become as a part of our lives and we are living with the technology. We need to understand what is happening with the health of the person to be precise we need to analyze our own health. In this scenario we are implementing machine learning methodology in health care information for the problem statement of personalizing the medical information which is a private information we need to make it safe while using and implementing some sort of algorithms. In this paper we are discussing about understanding the human disease patterns and using which random forest and other machine learning models work and predict the actual procedure a person has to follow to get a good health and avoid the different health loss activities we are doing regularly. In this random forest is the most accurate algorithm worked with this concept and we need to analyze the other reasons for understanding which kind of information is most useful for performing machine learning. Machine learning cannot be implemented for all type of issues in the real time. But we can maintain a better break through of machine learning implementation on medical issues as mentioned in this article. We are performing a better algorithm to understand the human problems related to health care and we are proposing with sample implementations and explanation with relevant results. We tried to implement TMS algorithm which gives the trust on the algorithm based on the truth maintenance system</p>
+        </header>
+        <div class="row about-container">
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Alex Corporations </strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        Designed by <a href="#">Alex</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{%static 'lib/jquery/jquery.min.js'%}"></script>
+  <script src="{%static 'lib/jquery/jquery-migrate.min.js'%}"></script>
+  <script src="{%static 'lib/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{%static 'lib/easing/easing.min.js'%}"></script>
+  <script src="{%static 'lib/mobile-nav/mobile-nav.js'%}"></script>
+  <script src="{%static 'lib/wow/wow.min.js'%}"></script>
+  <script src="{%static 'lib/waypoints/waypoints.min.js'%}"></script>
+  <script src="{%static 'lib/counterup/counterup.min.js'%}"></script>
+  <script src="{%static 'lib/owlcarousel/owl.carousel.min.js'%}"></script>
+  <script src="{%static 'lib/isotope/isotope.pkgd.min.js'%}"></script>
+  <script src="{%static 'lib/lightbox/js/lightbox.min.js'%}"></script>
+  <script src="{%static 'contactform/contactform.js'%}"></script>
+  <script src="{%static 'js/main.js'%}"></script>
+
+</body>
+</html>

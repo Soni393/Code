@@ -1,0 +1,66 @@
+{%extends 'admins/adminbase.html'%}
+{%load static%}
+{%block contents%}
+<br/>
+ <main id="main">
+
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Admin TMS Results</h3>
+          <p>
+            <center>
+            <table border="2px">
+             {% for t in tms %}
+                <tr><td style="color:RED;"> {{ t }}</td></tr>
+             {% endfor %}
+
+
+               <tr> <td>depression mental</td><td>A</td></tr>
+               <tr> <td>coronary arteriosclerosis</td><td>B</td></tr>
+               <tr> <td>malignant neoplasms</td><td>C</td></tr>
+                <tr><td>HIV</td><td>D</td></tr>
+               <tr> <td>sepsis (invertebrate)</td><td>E</td></tr>
+               <tr> <td>carcinoma prostate</td><td>F</td></tr>
+               <tr> <td>carcinoma breast</td><td>G</td></tr>
+               <tr> <td>candidiasis</td><td>H</td></tr>
+               <tr> <td>carcinoma colon</td><td>I</td></tr>
+               <tr> <td>tonic-clonic epilepsy</td><td>J</td></tr>
+               <tr> <td>carcinoma of lung</td><td>K</td></tr>
+               <tr> <td>effusion pericardial</td><td>L</td></tr>
+               <tr> <td>biliary calculus</td><td>M</td></tr>
+               <tr> <td>pericardial effusion body substance</td><td>N</td></tr>
+               <tr> <td>cholelithiasis</td><td>O</td></tr>
+               <tr> <td>depressive disorder</td><td>P </td></tr>
+               <tr> <td>coronary heart disease</td><td>Q </td></tr>
+               <tr> <td>primary malignant neoplasm</td><td>R </td></tr>
+               <tr> <td>hiv infections</td><td>S</td></tr>
+               <tr> <td>systemic infection</td><td>T </td></tr>
+               <tr> <td>malignant neoplasm of prostate</td><td>U </td></tr>
+               <tr> <td>malignant neoplasm of breast</td><td>V </td></tr>
+               <tr> <td>oralcandidiasis</td><td>W </td></tr>
+               <tr> <td>malignant tumor of colon</td><td>X </td></tr>
+               <tr> <td>tonic-clonic seizures</td><td>Y </td></tr>
+               <tr> <td>malignant neoplasm of lung</td><td>Z </td></tr>
+                </table>
+            <span style="font-weight:bold">
+                TMS is the truth maintenance system is the method
+identifying the process we considered or the data we
+considered is genuine and can be trustable or not. In this we
+are generating the categorical variables using the machine
+learning and then we are applying the prediction models to
+get the accuracy and the ground truth of the data
+            </span>
+             </center>
+
+          </p>
+        </header>
+        <div class="row about-container">
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+{%endblock%}

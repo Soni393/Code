@@ -1,0 +1,49 @@
+{%extends 'users/userbase.html'%}
+{%load static%}
+{%block contents%}
+<br/>
+ <main id="main">
+
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Users View Naive Bayes Results  </h3>
+          <p>
+            <center>
+            <table border="1px">
+                <tr><td>S.No</td><td>Actual Values</td><td>Predicted Value</td></tr>
+            {% for keys, values in score_NB_dict.items %}
+               <tr>
+                   <td>{{forloop.counter}}</td>
+                   <td>{{keys}}</td>
+                   <td>{{values}}</td>
+               </tr>
+            {%endfor%}
+            </table>
+            <h2>Score <span style="color:GREEN">{{score_NB}}</span></h2>
+
+            <h2>Naive Bayes Prediction Results </h2>
+             <table border="1px">
+                 <tr><td>S.No</td><td>Actual Values</td><td>Predicted Value</td></tr>
+            {% for keys, values in score_Prob_dict.items %}
+               <tr>
+                   <td>{{forloop.counter}}</td>
+                   <td>{{keys}}</td>
+                   <td>{{values}}</td>
+               </tr>
+            {%endfor%}
+            </table>
+            <h2>Score <span style="color:GREEN">{{score_prob}}</span></h2>
+            </center>
+
+          </p>
+        </header>
+        <div class="row about-container">
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+{%endblock%}

@@ -1,0 +1,53 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block contents%}
+ <section id="intro" class="clearfix">
+    <div class="container">
+
+      <div class="intro-img">
+        <img src="{%static 'img/intro-img.svg'%}" alt="" class="img-fluid">
+      </div>
+
+      <div class="intro-info">
+        <h2><br><span>Admin Login Form</span><br></h2>
+        <div>
+
+   <form action="{%url 'AdminLoginCheck'%}" method="POST" class="text-primary" style="width:100%">
+                    {% csrf_token %}
+                    <table>
+<tr>
+    <td style="color:WHITE">Enter Login ID</td>
+    <td><input type="text" class="form-control" name="loginid" required placeholder="Enter Login Id"></td>
+</tr>
+<tr>
+    <td style="color:WHITE">Enter Password</td>
+    <td><input type="password" class="form-control" name="pswd" required placeholder="Enter password"></td>
+</tr>
+
+<tr>
+
+    <td><button class="btn btn-block btn-primary text-white py-3 px-5" style="margin-left:20%;" type="submit">Login</button> </td>
+</tr>
+
+
+
+
+                        {% if messages %}
+                        {% for message in messages %}
+                        <font color='GREEN'> {{ message }}</font>
+                        {% endfor %}
+                        {% endif %}
+
+                    </table>
+
+                </form>
+
+         <!-- <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our Services</a>
+          -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+{%endblock%}

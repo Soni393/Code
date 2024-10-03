@@ -1,0 +1,89 @@
+{%extends 'admins/adminbase.html'%}
+{%load static%}
+{%block contents%}
+<br/>
+ <main id="main">
+
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Algorithm Training and Testing Accuracy </h3>
+          <p>
+            <center>
+ <table border="2px" class="table table-hover table-dark">
+                    <thead>
+                    <tr class="table-danger">
+                        <th scope="col">S.No</th>
+                        <th scope="col">Algorithm Name</th>
+                        <th scope="col">Train Accuracy</th>
+                        <th scope="col">Test Accuracy</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr scope="row" style="color: BLUE; background-color:#FFFCBB">
+                        <td>1</td>
+                        <td>SVM</td>
+                        <td>{{trainsvm}}</td>
+                        <td>{{testsvm}}</td>
+                    </tr>
+                     <tr scope="row" style="color: BLUE; background-color:#FFFCBB">
+                        <td>2</td>
+                        <td>Naive Bayes</td>
+                        <td>{{trainnb}}</td>
+                        <td>{{testnb}}</td>
+                    </tr>
+
+                    <tr scope="row" style="color: BLUE; background-color:#FFFCBB">
+                        <td>3</td>
+                        <td>Logistic Regression</td>
+                        <td>{{trainlg}}</td>
+                        <td>{{testlb}}</td>
+                    </tr>
+
+                    <tr scope="row" style="color: BLUE; background-color:#FFFCBB">
+                        <td>4</td>
+                        <td>Decision Tree</td>
+                        <td>{{trainlg}}</td>
+                        <td>{{testlb}}</td>
+                    </tr>
+
+                    <tr scope="row" style="color: BLUE; background-color:#FFFCBB">
+                        <td>5</td>
+                        <td>Random Forest</td>
+                        <td>{{trainrf}}</td>
+                        <td>{{testrf}}</td>
+                    </tr>
+
+                    <tr scope="row" style="color: BLUE; background-color:#FFFCBB">
+                        <td>6</td>
+                        <td>LightGBM</td>
+                        <td>{{traingbm}}</td>
+                        <td>{{testgbm}}</td>
+                    </tr>
+
+                     <tr scope="row" style="color: BLUE; background-color:#FFFCBB">
+                        <td>7</td>
+                        <td>XGBoost</td>
+                        <td>{{trainxg}}</td>
+                        <td>{{testxg}}</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+            </center>
+
+          </p>
+        </header>
+        <div class="row about-container">
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+{%endblock%}

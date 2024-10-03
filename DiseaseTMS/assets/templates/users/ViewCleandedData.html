@@ -1,0 +1,26 @@
+{%extends 'users/userbase.html'%}
+{%load static%}
+{%block contents%}
+<br/>
+ <main id="main">
+
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Users View Data Form </h3>
+          <p>
+            <center>
+             {{data | safe}}
+            </center>
+
+          </p>
+        </header>
+        <div class="row about-container">
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+{%endblock%}
